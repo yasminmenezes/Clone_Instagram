@@ -1,0 +1,163 @@
+* { /*parte que aparece na tela como um todo*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.insta-wrapper{   /*conteúdo total da página vai estar localizado aqui*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100vh;
+    
+}
+
+.photophone{ /*tela da imagem do telefone*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.photophone img{
+    height: 50rem;
+    
+}
+
+.right-side{ /*parte que engloba tudo que está ao lado da imagem do celular*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.insta-login{ /*Engloba a logo do insta, foto de perfil, continue como username e remover conta*/
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted grey;
+    padding: 1.3rem 0;
+    margin: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 19rem;
+}
+
+.insta-logo img{
+    height: 3rem;
+}
+
+.profile-login{ /*é a parte onde está a imagem de perfil*/
+    margin: 20px;
+}
+
+.profile-login img{
+    border-radius: 50%;
+    height: 10rem;
+}
+
+.continue{ /*continue como username*/
+    display: flex;
+    background-color: rgba(0, 119, 255, 0.822);
+    color: white;
+    padding: 10px;
+    width: 250px;
+    border-radius: 3%;
+    justify-content: center;
+}
+
+.remover{ /*remover conta*/
+    color: rgba(0, 119, 255, 0.822);
+    padding: 10px;
+}
+
+.muda-login{ /*não é username? alterne conta ou se inscreva*/
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted grey;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.not-username{
+    color: grey;
+}
+
+.link-blue{
+    color: rgba(0, 119, 255, 0.822);
+}
+
+.getapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.sub-getapp{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+}
+
+.download-apple{
+    height: 3rem;
+    width: 10rem;
+    background-image: url(apple-button.png);
+    background-size: cover;
+}
+
+.download-google{
+    height: 3rem;
+    width: 10rem;
+    background-image: url(googleplay-button.png);
+    background-size: cover;
+}
+
+/*Media Queries: para o ambiente ficar responsivo com relação aos diferentes devices*/
+
+@media (max-width: 1024px) {
+    .insta-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .insta-wrapper {
+        width: 90%;
+    }
+
+    .photophone {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+}
